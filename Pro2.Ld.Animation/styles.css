@@ -49,6 +49,11 @@ body {
 }
 @keyframes load {
     0% {
+        width: 30px;
+        height: 30px;
+    }
+
+    50% {
         width: 20px;
         height: 20px;
     }
