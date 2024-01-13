@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.card {
+    width: 800px;
+    background: #fff;
+    font-family: sans-serif;
+    line-height: 28px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 40px 0;
+    box-shadow: 10px 5px 5px rgb(199, 194, 194);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0093E9, #6284FF, #FF0000);
+    border-radius: 100px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-family: Verdana;
+    font-weight: 800;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: green;
+
+}
