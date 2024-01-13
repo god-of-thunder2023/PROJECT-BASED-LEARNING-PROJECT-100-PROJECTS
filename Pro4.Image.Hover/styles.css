@@ -1,0 +1,75 @@
+body {
+    padding: 0; 
+    margin: 0;
+    background: #555;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #222;
+    border-radius: 20px;
+}
+
+.clip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.clip .text {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding:10px
+}
+
+.clip .text:hover {
+    color: white; 
+    background-color: black;
+    border-radius: 20px;
+    
+}
+
+.clip-1 {
+    background: url(assets/001.jpg); 
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%)
+}
+
+.clip-2 {
+    background: url(assets/002.jpg); 
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%)
+}
+
+.clip-3 {
+    background: url(assets/003.jpg); 
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(80% 0, 100% 0, 100% 100%, 63% 100%)
+}
+
+.container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover{ 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
