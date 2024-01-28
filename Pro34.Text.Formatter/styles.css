@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #fdefcb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conatiner {
+    padding: 6rem;
+    background: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.conatiner h2 {
+    margin-bottom: 2.5rem;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3rem;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+    color: white;
+    background-color: green;
+}
+
+p {
+    width: 600px;
+    height: 600px;
+    background: #fdefcb;
+    color: black;
+    height: 80px;
+    /* background: #; */
+    border: 1px solid #555;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    font-family: sans-serif;
+
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
