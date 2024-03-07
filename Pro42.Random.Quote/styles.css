@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #ddd;
+    text-align: center;
+    font-family: sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-container {
+    padding: 5rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);   
+}
+
+#quoteOutput {
+    font-family: sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 50px; 
+    margin-top: 2rem;
+    width: 800px;
+}
+
+#authorOut {
+    position: relative;
+    margin-top: 5rem;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
+}
+
+span::before{
+    content: "\201C";
+    font-size: 10rem;
+    font-family: sans-serif;
+    color: #fdbb11;
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    animation: anime 1s ease-out;
+} 
+
+span, small {
+    animation: anime 1s ease-out;
+}
+
+.btn {
+    padding: 10px 30px;
+    background-color: #fdbb11;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
